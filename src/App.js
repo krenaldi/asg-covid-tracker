@@ -3,10 +3,11 @@
 // import CountryPicker from './components/CountryPicker/CountryPicker'
 
 import { Cards, Chart, CountryPicker } from './components'
+import styles from './App.module.css'
 
 function App() {
   return (
-    <div >
+    <div className={styles.container}>
       <Cards />
       <Chart />
       <CountryPicker />
