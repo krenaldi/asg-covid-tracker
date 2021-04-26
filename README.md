@@ -4,6 +4,8 @@
 
 This app tracks the number of confirmed Covid cases, the number of cases where the patient recovered, and the number of deaths both on a global scale and by individual country.
 
+The chart and data changes when either a country or Global is selected in the drop down menu.
+
 ## Table of Contents
 
 * [Contributing](#contributing)
