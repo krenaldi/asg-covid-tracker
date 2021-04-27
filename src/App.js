@@ -5,34 +5,34 @@ import { fetchData } from './API';
 import { useStoreContext } from './utils/context';
 
 const App = props => {
-  const [ data, setData ] = useState({});
-  const [ country, setCountry ] = useState('')
+  // const [ data, setData ] = useState({});
+  // const [ country, setCountry ] = useState('')
 
-  useEffect(() => {
-    const fetchAPI = async (country) => {
-      setData(await fetchData(country));
-      if(country) {
-        setCountry({country})
-      }
-    }
-    fetchAPI();
-  }, [setCountry])
+  // useEffect(() => {
+  //   const fetchAPI = async (country) => {
+  //     setData(await fetchData(country));
+  //     if(country) {
+  //       setCountry({country})
+  //     }
+  //   }
+  //   fetchAPI();
+  // }, [setCountry])
 
-  const handleCountryChange = async (country) => {
-    // fetch data
-    const data = await fetchData(country);
-    // console.log(fetchedData);
-    // set state
-    setData(data)
-    setCountry(country)
-  }
+  // const handleCountryChange = async (country) => {
+  //   // fetch data
+  //   const data = await fetchData(country);
+  //   // console.log(fetchedData);
+  //   // set state
+  //   setData(data)
+  //   setCountry(country)
+  // }
 
     return (
       <div className={styles.container}>
         <Header />
-        <CountryPicker handleCountryChange={handleCountryChange}  />
-        <Cards data={data} />
-        <Chart data={data} country={country} />
+        <CountryPicker  />
+        <Cards  />
+        <Chart  />
       </div>
     );
 }

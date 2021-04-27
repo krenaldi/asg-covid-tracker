@@ -7,7 +7,7 @@ import { StoreContext } from '../../utils/context'
 const Cards = ({ data: { confirmed, deaths, recovered, lastUpdate } }) => {
     const context = useContext(StoreContext);
 
-    // console.log(context)
+    console.log(context)
     if (!confirmed) {
         return 'Loading...'
     }
