@@ -1,8 +1,8 @@
 import { useState, useEffect, useContext } from 'react';
-import { CountryContext } from './utils/GlobalState';
 import { Header, Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
 import { fetchData } from './API';
+import { useStoreContext } from './utils/context';
 
 const App = props => {
   const [ data, setData ] = useState({});
