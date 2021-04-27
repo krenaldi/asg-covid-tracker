@@ -25,7 +25,6 @@ const App = props => {
     // set state
     setData(data)
     setCountry(country)
-
   }
 
     return (

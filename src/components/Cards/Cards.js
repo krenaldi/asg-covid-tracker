@@ -1,9 +1,13 @@
+import  { useContext } from 'react';
 import { Grid } from '@material-ui/core';
 import styles from './Cards.module.css';
 import CardComponent from './Card/Card';
+import { StoreContext } from '../../utils/context'
 
 const Cards = ({ data: { confirmed, deaths, recovered, lastUpdate } }) => {
-    // console.log(confirmed)
+    const context = useContext(StoreContext);
+
+    // console.log(context)
     if (!confirmed) {
         return 'Loading...'
     }
