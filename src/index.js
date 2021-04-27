@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CountryProvider from './utils/GlobalState'
+import IntroProvider from './utils/GlobalState'
 import App from './App';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <CountryProvider>
+    <IntroProvider>
       <App />
-    </CountryProvider>
+    </IntroProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

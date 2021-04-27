@@ -1,13 +1,24 @@
 import {createContext} from 'react';
 
-const CountryContext = createContext();
+export const IntroContext = createContext();
+export const DataContext = createContext();
 
-const CountryProvider = (props) => {
+const IntroProvider = (props) => {
     return (
-        <CountryContext.Provider value={"View COVID-19 data by either globally or by individual country"}>
+        <IntroContext.Provider value={"View COVID-19 data by either globally or by individual country"}>
             {props.children}
-        </CountryContext.Provider>
+        </IntroContext.Provider>
     )
 }
 
-export default CountryProvider;
+const DataProvider = (props) => {
+
+}
+
+export const useGetState = () => {
+    const { state } = useContext(DataContext);
+
+    return state;
+}
+
+export default IntroProvider;
