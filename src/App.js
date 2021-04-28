@@ -32,7 +32,7 @@ const App = props => {
         <Header />
         <CountryPicker  />
         <Cards  />
-        <Chart  />
+        {/* <Chart  /> */}
       </div>
     );
 }
